@@ -1,0 +1,17 @@
+#slideshow {
+  list-style-type: none;
+  pointer-events: none;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#slideshow > li {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s;
+}
+
+#slideshow > li.current {
+  opacity: 1;
+}
